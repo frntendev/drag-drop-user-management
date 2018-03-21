@@ -1,0 +1,56 @@
+{
+  "name": "drag-drop-user-management",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "babel-jest": "^23.0.0-alpha.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-15": "^1.0.5",
+    "gh-pages": "^0.12.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^22.4.2",
+    "react-scripts": "^0.8.1"
+  },
+  "dependencies": {
+    "emotion": "^9.0.2",
+    "lodash": "^4.17.2",
+    "material-ui": "^1.0.0-beta.37",
+    "material-ui-icons": "^1.0.0-beta.36",
+    "prop-types": "^15.6.1",
+    "react": "^15.6.2",
+    "react-dnd": "^2.1.4",
+    "react-dnd-html5-backend": "^2.1.2",
+    "react-dom": "^15.6.2",
+    "react-emotion": "^9.0.2",
+    "react-redux": "^4.4.6",
+    "react-test-renderer": "^15.6.2",
+    "redux": "^3.6.0",
+    "redux-form": "^6.2.1",
+    "redux-logger": "^2.7.4",
+    "redux-notifications": "^4.0.1",
+    "redux-thunk": "^2.1.0",
+    "reselect": "^3.0.1",
+    "uniqid": "^4.1.0"
+  },
+  "scripts": {
+    "deploy": "npm run build && gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest",
+    "eject": "react-scripts eject"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(jsx|js)?$": "<rootDir>/node_modules/babel-jest"
+    },
+    "moduleNameMapper": {
+      "\\.css$": "identity-obj-proxy"
+    },
+    "collectCoverageFrom": ["**/*.component.{js,jsx}", "!**/node_modules/**"],
+    "coverageReporters": ["text-summary"],
+    "unmockedModulePathPatterns": [
+      "node_modules/react/",
+      "node_modules/enzyme/"
+    ]
+  }
+}
