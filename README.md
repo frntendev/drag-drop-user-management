@@ -1,5 +1,4 @@
-# Drag Drop User Management For InterNations
-
+# Drag Drop User Management
 > A User Management application written in React and Redux
 
 ### Installation
